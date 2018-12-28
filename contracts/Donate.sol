@@ -19,6 +19,9 @@ contract Donate {
 
   function donate() public payable {
 
+    // Donation must be greater than zero
+    require(msg.value > 0);
+
     // Keep track of the balance
     currentBalance += msg.value;
     totalBalance += msg.value;
