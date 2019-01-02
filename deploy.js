@@ -7,7 +7,7 @@ const compiledContract = require('./build/Donate.json');
 
 const provider = new HDWalletProvider(
   secret.mnemonic,
-  secret.infura
+  secret.infura_test
 );
 
 const web3 = new Web3(provider);

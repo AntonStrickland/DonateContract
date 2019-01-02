@@ -38,8 +38,8 @@ contract Donate {
     admin.transfer(address(this).balance);
   }
 
-  function getSummary() public view returns (uint, uint, uint) {
-    return ( currentBalance, totalBalance, numberOfDonations );
+  function getSummary() public view returns (address, uint, uint, uint) {
+    return ( admin, currentBalance, totalBalance, numberOfDonations );
   }
 
 }
